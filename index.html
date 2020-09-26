@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">     
+        <div class="card text-center text-white bg-secondary mb-3 p-4">  
+            <div class="row text-center p-1">
+                <div class="col-md-12">
+                   <h1 style="font-family:'Do Hyeon', sans-serif;"><img src="Images/news.png" width="40" height="40" class="d-inline-block align-center"> New York Times Search</h1>
+                </div>                    
+            </div>           
+        </div>       
+        <div class="card bg-light mb-3">
+            <div class="card-header">Search Parameters</div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                    <label for="SearchTerm">Search Term:</label>
+                    <input type="text" class="form-control" id="SearchTerm">                  
+                    </div>
+                    <div class="form-group">
+                        <label for="NumRecords">Number of Records to Retieve:</label>
+                        <select class="custom-select my-1 mr-sm-2" id="NumRecords">
+                            <option value="1" selected >1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>                       
+                    </div>
+                    <div class="form-group">
+                        <label for="StartDate">Start Year:</label>
+                        <input type="date" class="form-control" id="StartDate">                  
+                    </div>   
+                    <div class="form-group">
+                        <label for="EndDate">End Year:</label>
+                        <input type="date" class="form-control" id="EndDate">                  
+                    </div>             
+                    <button type="button" class="btn btn-primary" id="search"><img src="Images/search.png" width="30" height="30" class="d-inline-block align-top"> Search</button>
+                    <button type="button" class="btn btn-primary" id="clear"><img src="Images/clear.png" width="30" height="30" class="d-inline-block align-top"> Clear Results</button>
+                </form>
+            </div>
+        </div>
+        <div class="card bg-light mb-3">
+            <div class="card-header"><img src="Images/articles.jpg" width="30" height="30" class="d-inline-block align-top">Top Articles</div>
+            <div class="card-body Articles">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+    </html>
