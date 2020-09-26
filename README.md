@@ -1,0 +1,2 @@
+# NewsSearch
+Activity in class
